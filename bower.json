@@ -1,0 +1,23 @@
+{
+  "name": "bucketlist",
+  "version": "0.0.0",
+  "homepage": "https://github.com/danielleknudson/bucketlist",
+  "authors": [
+    "Danielle Knudson <knudson.danielle@gmail.com>"
+  ],
+  "description": "bucketlist app in coffeescript",
+  "main": "app.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "underscore": "~1.8.3",
+    "backbone": "~1.2.0"
+  }
+}

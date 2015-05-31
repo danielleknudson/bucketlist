@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "appView.js",
+  "sourceRoot": "../../..",
+  "sources": [
+    "app/views/appView.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,OAAA,GAAU,QAAQ,CAAC,IAAI,CAAC,MAAd,CACR;IAAA,GAAA,EAAK,CAAA,CAAE,MAAF,CAAL;IAEA,UAAA,EAAY,SAAA;aACV,IAAC,CAAA,EAAD,CAAI,iBAAJ,EAAuB,IAAC,CAAA,iBAAxB;IADU,CAFZ;IAKA,iBAAA,EAAmB,SAAA,GAAA,CALnB;GADQ;AAAV"
+}

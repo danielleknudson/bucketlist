@@ -1,0 +1,39 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>My Bucketlist</title>
+  <link rel="stylesheet" type="text/css" href="">
+</head>
+<body>
+  <div id="app">
+    <button class="btn" id="add-goal">Add Goal</button>
+  </div>
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="bower_components/underscore/underscore-min.js"></script>
+  <script type="text/javascript" src="bower_components/backbone/backbone-min.js"></script>
+
+  <script type="text/template" id="goal-template">
+    """
+      <h3>#{ goal }</h3>
+      <span class='due-date'>#{ due_date }</span>
+    """
+  </script>
+
+  <script type="text/template" id="goal-detail-template">
+    """
+    
+    """
+  </script>
+
+  <script type="text/javascript" src="compiled/app/models/goal.js"></script>
+  <script type="text/javascript" src="compiled/app/collections/bucketlist.js"></script>
+  <script type="text/javascript" src="compiled/app/views/goalView.js"></script>
+  <script type="text/javascript" src="compiled/app/views/bucketlistView.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $('body').append(new BucketlistView({collection: new Bucketlist()}));
+    });
+  </script>
+
+</body>
+</html>

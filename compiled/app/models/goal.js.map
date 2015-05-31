@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "goal.js",
+  "sourceRoot": "../../..",
+  "sources": [
+    "app/models/goal.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,IAAA,GAAW,IAAA,QAAQ,CAAC,KAAK,CAAC,MAAf,CACT;IAAA,UAAA,EAAY,SAAA,GAAA,CAAZ;IAEA,QAAA,EACE;MAAA,IAAA,EAAM,kBAAN;MACA,QAAA,EAAU,IAAI,IADd;MAEA,KAAA,EAAO,EAFP;MAGA,MAAA,EAAQ,EAHR;MAIA,UAAA,EAAY,EAJZ;MAKA,SAAA,EAAS,KALT;MAMA,YAAA,EAAc,KANd;KAHF;GADS;AAAX"
+}

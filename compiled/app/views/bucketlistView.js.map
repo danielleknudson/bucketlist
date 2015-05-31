@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "bucketlistView.js",
+  "sourceRoot": "../../..",
+  "sources": [
+    "app/views/bucketlistView.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,cAAA,GAAqB,IAAA,QAAQ,CAAC,IAAI,CAAC,MAAd,CACnB;IAAA,MAAA,EACE;MAAA,OAAA,EAAU,eAAV;KADF;IAGA,QAAA,EAAU,SAAA,GAAA,CAHV;IAKA,MAAA,EAAQ,SAAA,GAAA,CALR;GADmB;AAArB"
+}
