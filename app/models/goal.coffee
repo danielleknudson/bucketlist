@@ -1,4 +1,4 @@
-Goal = new Backbone.Model.extend
+class window.Goal extends Backbone.Model
   initialize: ->
 
   defaults:

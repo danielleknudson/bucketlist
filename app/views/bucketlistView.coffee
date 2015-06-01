@@ -1,4 +1,4 @@
-BucketlistView = new Backbone.View.extend
+class window.BucketlistView extends Backbone.View
   events:
     'event' : 'event handler'
 

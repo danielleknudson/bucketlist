@@ -1,4 +1,4 @@
-GoalView = new Backbone.View.extend
+class window.GoalView extends Backbone.View
   className: 'goal'
 
   initialize: ->

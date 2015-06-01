@@ -2,37 +2,60 @@
 <head>
   <meta charset="utf-8">
   <title>My Bucketlist</title>
-  <link rel="stylesheet" type="text/css" href="">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 <body>
   <div id="app">
     <button class="btn" id="add-goal">Add Goal</button>
+    <div id="goal-prompt-container"></div>
   </div>
   <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.min.js"></script>
   <script type="text/javascript" src="bower_components/underscore/underscore-min.js"></script>
   <script type="text/javascript" src="bower_components/backbone/backbone-min.js"></script>
 
+  <script type="text/template" id="goal-prompt-template">
+      <label for "title-input">Title</label>
+      <input type="text" id="title-input">
+
+      <label for "due-date">Accomplish by</label>
+      <input type="text" id="due-date">
+
+      <label for "notes">Notes</label>
+      <textarea id="notes"></textarea>
+
+      <label for "photos">Title</label>
+      <input type="text" id="photos">
+
+      <label for "categories">categories</label>
+      <input type="text" id="categories">
+
+      <label for "private">This is a private goal</label>
+      <input type="checkbox" id="private">
+  </script>
+
   <script type="text/template" id="goal-template">
-    """
       <h3>#{ goal }</h3>
       <span class='due-date'>#{ due_date }</span>
-    """
   </script>
 
   <script type="text/template" id="goal-detail-template">
-    """
     
-    """
   </script>
 
   <script type="text/javascript" src="compiled/app/models/goal.js"></script>
   <script type="text/javascript" src="compiled/app/collections/bucketlist.js"></script>
+
   <script type="text/javascript" src="compiled/app/views/goalView.js"></script>
   <script type="text/javascript" src="compiled/app/views/bucketlistView.js"></script>
+  <script type="text/javascript" src="compiled/app/views/appView.js"></script>
+
   <script type="text/javascript">
-    $(function(){
-      $('body').append(new BucketlistView({collection: new Bucketlist()}));
-    });
+    $(document).ready(function(){
+      var myBucketList = new Bucketlist();
+      var myBucketListView = new BucketlistView({collection: myBucketList});
+      var myApp = new AppView(); 
+    });    
   </script>
 
 </body>

@@ -1,4 +1,4 @@
-Bucketlist = new Backbone.Collection.extend
+class window.Bucketlist extends Backbone.Collection
   model: Goal
 
   initialize: ->
