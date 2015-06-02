@@ -9,6 +9,7 @@ class window.AppView extends Backbone.View
 
   events:
     'click #add-goal': 'displayGoalPrompt'
+    'click #save-goal': 'saveGoalHandler'
 
   displayGoalPrompt: ->
     html = _.template $('#goal-prompt-template') .html()
@@ -19,3 +20,6 @@ class window.AppView extends Backbone.View
 
   addDatepicker: ->
     $('#due-date').datepicker();
+
+  saveGoalHandler: ->
+   @collection saveGoal()

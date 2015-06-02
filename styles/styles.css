@@ -1,21 +1,104 @@
 body {
   font-size: 16px;
   font-family: "Helvetica Neue", "Arial", sans-serif;
+  color: #394144;
+  margin: 0;
+}
+
+#topbar {
+  width: 100%;
+  padding: 10px;
+  background: #050e09;
+  position: relative;
+}
+
+#topbar h4 {
+  left: 20px;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  color: #FFFFFF;
+  font-weight: 300;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.btn {
+  position: relative;
+  padding: 7px 14px;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+#add-goal {
+  background: #38A668;
+  border: 1px solid #349960;
+  color: #FFFFFF;
+}
+
+#save-goal {
+  margin-top: 40px;
+  display: block;
+  background: #38A668;
+  border: 1px solid #349960;
+  color: #FFFFFF;
 }
 
 #goal-prompt-container {
   width: 470px;
+  margin: 40px;
+}
+
+label {
+  display: inline;
+  float: left;
 }
 
 input, textarea {
-  display: block;
   width: 100%;
-  border: 1px solid #fcdd8c;
+  border: 1px solid #b8c0c4;
   border-radius: 3px;
-  padding: 5px;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+label {
+  margin-top: 5px;
 }
 
 textarea {
   resize: none;
+  height: 40px;
+}
+
+#private {
+  display: inline;
+  width: 15px;
+  height: 15px;
+  padding: 10px;
+  margin: 8px 0 0 5px;
+}
+
+#ui-datepicker-div {
+  background: #FFFFFF;
+  font-size: 10px;
+  padding: 7px;
+  box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, .3);
+  border-radius: 3px;
+}
+
+.ui-datepicker-title {
+  font-size: 13px;
+  padding: 5px;
+  font-weight: 300;
+}
+
+#ui-datepicker-div a {
+  color: #3079DA;
+  font-size: 11px;
+  padding: 5px;
+  float: right;
+  text-decoration: none;
 }
 

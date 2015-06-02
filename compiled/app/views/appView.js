@@ -21,7 +21,8 @@
     };
 
     AppView.prototype.events = {
-      'click #add-goal': 'displayGoalPrompt'
+      'click #add-goal': 'displayGoalPrompt',
+      'click #save-goal': 'saveGoalHandler'
     };
 
     AppView.prototype.displayGoalPrompt = function() {
@@ -35,6 +36,10 @@
 
     AppView.prototype.addDatepicker = function() {
       return $('#due-date').datepicker();
+    };
+
+    AppView.prototype.saveGoalHandler = function() {
+      return this.collection(saveGoal());
     };
 
     return AppView;

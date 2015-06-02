@@ -6,7 +6,9 @@
 </head>
 <body>
   <div id="app">
-    <button class="btn" id="add-goal">Add Goal</button>
+    <div id="topbar"><h4>My Bucketlist</h4>
+      <button class="btn" id="add-goal">Add Goal</button>
+    </div>
     <div id="goal-prompt-container"></div>
   </div>
   <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -15,6 +17,7 @@
   <script type="text/javascript" src="bower_components/backbone/backbone-min.js"></script>
 
   <script type="text/template" id="goal-prompt-template">
+      <form id="goal-input-form">
       <label for "title-input">Title</label>
       <input type="text" id="title-input">
 
@@ -27,11 +30,13 @@
       <label for "photos">Title</label>
       <input type="text" id="photos">
 
-      <label for "categories">categories</label>
+      <label for "categories">Categories</label>
       <input type="text" id="categories">
 
-      <label for "private">This is a private goal</label>
-      <input type="checkbox" id="private">
+      <label for "private">This is a private goal
+      <input type="checkbox" id="private"></label>
+      <button class="btn clearfix" id="save-goal">Save</button>
+      </form>
   </script>
 
   <script type="text/template" id="goal-template">
